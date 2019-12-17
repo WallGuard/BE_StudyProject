@@ -8,14 +8,14 @@
     },
     "repository": {
       "type": "git",
-      "url": ""
+      "url": "https://github.com/WallGuard/BE_StudyProject.git"
     },
     "author": "Mikhail Topal",
     "license": "MIT",
     "bugs": {
-      "url": ""
+      "url": "https://github.com/WallGuard/BE_StudyProject.git"
     },
-    "homepage": "",
+    "homepage": "https://github.com/WallGuard/BE_StudyProject.git",
     "dependencies": {
       "express": "^4.16.4",
       "express-handlebars": "^3.0.0"
