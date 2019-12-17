@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Notes App</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">
+      <img id="logo" src="img/writing.svg" alt="">
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+
+        <a {{#if home}}     class="active" {{/if}} href="/">Home</a>
+        <a {{#if features}} class="active" {{/if}} href="/features">Features</a>
+        <a {{#if news}}     class="active" {{/if}} href="/news">News</a>
+
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    {{{ body }}}
+  </div>
+
+</body>
+
+</html>
