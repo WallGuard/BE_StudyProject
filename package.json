@@ -1,27 +1,26 @@
 {
-    "name": "l",
-    "version": "1.0.0",
-    "description": "1st step. Express.js",
-    "main": "index.js",
-    "scripts": {
-      "start": "nodemon index.js"
-    },
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/WallGuard/BE_StudyProject.git"
-    },
-    "author": "Mikhail Topal",
-    "license": "MIT",
-    "bugs": {
-      "url": "https://github.com/WallGuard/BE_StudyProject.git"
-    },
-    "homepage": "https://github.com/WallGuard/BE_StudyProject.git",
-    "dependencies": {
-      "express": "^4.16.4",
-      "express-handlebars": "^3.0.0"
-    },
-    "devDependencies": {
-      "nodemon": "^1.18.9"
-    }
+  "name": "l",
+  "version": "1.0.0",
+  "description": "1st step. Express.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WallGuard/BE_StudyProject.git"
+  },
+  "author": "Mikhail Topal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WallGuard/BE_StudyProject.git"
+  },
+  "homepage": "https://github.com/WallGuard/BE_StudyProject.git",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
   }
-  
+}

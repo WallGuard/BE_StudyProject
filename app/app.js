@@ -20,11 +20,9 @@ app.use(express.static(path.join(__dirname, 'static')));
 app.get('/', (req, res) => {
   res.render('home', { home: true });
 });
-
 app.get('/features', (req, res) => {
   res.render('features', { features: true });
 });
-
 app.get('/news', (req, res) => {
   res.render('news', { news: true });
 });
