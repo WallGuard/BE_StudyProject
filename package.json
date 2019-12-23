@@ -1,10 +1,13 @@
 {
-  "name": "l",
+  "name": "notes",
   "version": "1.0.0",
-  "description": "1st step. Express.js",
+  "description": "2st step - notes",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "migrate:up": "cd ./tables && db-migrate up",
+    "migrate:down": "cd ./tables && db-migrate down",
+    "migrate:reset": "cd ./tables && db-migrate reset"
   },
   "repository": {
     "type": "git",
@@ -21,6 +24,9 @@
     "express-handlebars": "^3.0.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9"
+    "nodemon": "^1.18.9",
+    "sqlite3": "^4.0.6",
+    "db-migrate": "^0.11.5",
+    "db-migrate-sqlite3": "^0.3.1"
   }
 }
