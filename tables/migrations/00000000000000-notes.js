@@ -7,10 +7,6 @@ var fs = require('fs');
 var path = require('path');
 var Promise;
 
-/**
-  * We receive the dbmigrate dependency from dbmigrate initially.
-  * This enables us to not have to rely on NODE_PATH.
-  */
 exports.setup = function(options, seedLink) {
   dbm = options.dbmigrate;
   type = dbm.dataType;
@@ -46,8 +42,4 @@ exports.down = function(db) {
   .then(function(data) {
     return db.runSql(data);
   });
-};
-
-exports._meta = {
-  "version": 1
 };

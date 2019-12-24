@@ -43,7 +43,3 @@ exports.down = function(db) {
     return db.runSql(data);
   });
 };
-
-exports._meta = {
-  "version": 1
-};
