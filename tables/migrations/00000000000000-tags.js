@@ -36,4 +36,3 @@ exports.down = function(db) {
     return db.runSql(data);
   });
 };
-
