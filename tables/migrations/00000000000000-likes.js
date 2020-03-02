@@ -1,11 +1,6 @@
-'use strict';
-
-var dbm;
-var type;
-var seed;
-var fs = require('fs');
-var path = require('path');
-var Promise;
+const fs = require('fs');
+const path = require('path');
+const filePath = path.join(__dirname, 'sqls', 'table_Likes-up.sql');
 
 exports.setup = function(options, seedLink) {
   dbm = options.dbmigrate;
@@ -15,7 +10,6 @@ exports.setup = function(options, seedLink) {
 };
 
 exports.up = function(db) {
-  var filePath = path.join(__dirname, 'sqls', 'table_Likes-up.sql');
   return new Promise( function( resolve, reject ) {
     fs.readFile(filePath, {encoding: 'utf-8'}, function(err,data){
       if (err) return reject(err);
@@ -30,7 +24,6 @@ exports.up = function(db) {
 };
 
 exports.down = function(db) {
-  var filePath = path.join(__dirname, 'sqls', 'table_Likes-down.sql');
   return new Promise( function( resolve, reject ) {
     fs.readFile(filePath, {encoding: 'utf-8'}, function(err,data){
       if (err) return reject(err);

@@ -1,11 +1,5 @@
-'use strict';
-
-var dbm;
-var type;
-var seed;
-var fs = require('fs');
-var path = require('path');
-var Promise;
+const fs = require('fs');
+const path = require('path');
 
 exports.setup = function(options, seedLink) {
   dbm = options.dbmigrate;
