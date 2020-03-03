@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
-const filePath = path.join(__dirname, 'sqls', 'table_NotesTags-up.sql');
+const filePath_up = path.join(__dirname, 'sqls', 'table_NotesTags-up.sql');
+const filePath_down = path.join(__dirname, 'sqls', 'table_NotesTags-down.sql');
 
 exports.setup = function(options, seedLink) {
   dbm = options.dbmigrate;
@@ -11,7 +12,7 @@ exports.setup = function(options, seedLink) {
 
 exports.up = function(db) {
   return new Promise( function( resolve, reject ) {
-    fs.readFile(filePath, {encoding: 'utf-8'}, function(err,data){
+    fs.readFile(filePath_up, {encoding: 'utf-8'}, function(err,data){
       if (err) return reject(err);
       console.log('received data: ' + data);
 
@@ -25,7 +26,7 @@ exports.up = function(db) {
 
 exports.down = function(db) {
   return new Promise( function( resolve, reject ) {
-    fs.readFile(filePath, {encoding: 'utf-8'}, function(err,data){
+    fs.readFile(filePath_down, {encoding: 'utf-8'}, function(err,data){
       if (err) return reject(err);
       console.log('received data: ' + data);
 
